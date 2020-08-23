@@ -1,52 +1,195 @@
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 100;
-    background-color: white;
 }
+    
+    header {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    
+    header a {
+        color: rgb(216, 122, 216);
+        border: none;
+        font-size: 20px;
+    }
+    li{
+        padding-bottom: 3px;
+        color: white;
+        text-shadow: 1.5px 1px 3px black;
+        list-style-type: none;
+    }
+    
+    p{
+        color: black;
+        text-shadow: .5px .5px white;
+        text-align: center;
+        font-size: 25px;
+        font-family: sans-serif;
+        padding: 0px 325px 0px 325px;
+    }
 
-header {
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-}
+    h2{
+        font-family: sans-serif;
+        margin-top: -.5rem;
+        font-size: 40px;
+    }
 
-header input {
-    color: rgb(75, 0, 130);
-    border: none;
-    font-size: 20px;
-}
+    input{
+        text-align: center;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: -35px auto;
+    }
+    
+    button {
+        display: inline-block;
+        font-family: sans-serif;
+        background-color: rgb(75,0,130);
+        border-radius: 10px;
+        border: 3px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 200px;
+        margin-top: 3px;
+    }
 
-body {
-    margin: 0%;
-    text-align: left;
-}
+    button:hover {
+        background-color: rgba(75, 0, 130, 0.4) ;
+        border-radius: 5px;
+        text-shadow: none;
+    }
 
-button {
-    display: inline-block;
-    font-family: sans-serif;
-    background-color: rgb(75, 0, 130); 
-    border-radius: 10px;
-    border: 3px double #cccccc;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    width: 200px;
-    margin-top: 3px
-}
+    
+    #startpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#startPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    #headerHighScore a:hover {
+        color: rgb(75, 0, 130, 0.7) ;
+        border-radius: 5px;
+        text-shadow: none;
+    }
+     
+    #timer{
+        font-family: sans-serif;
+        background-color: rgb(255, 255, 255);
+        color: #080101;
+        font-size: x-large;
+        text-shadow: .5px .5px black;
+        text-align: center;
+    }
+    #quiz {
+        display: flex;
+        justify-content: center;
+        align-items: left;display: none;
+    }
 
-p {
-    color: black;
-    text-shadow: .5px .5px white;
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    padding: 0px 200px 0px 200px;
-}
+    #answerPopup {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    #AnswerResponse {
+        display: flex;
+        border-top: 10px black;
+        justify-content: left;
+        align-items: left;
+        font-size: 20px;
+    }
+    
+    #result {
+        display: none;
+    }
+    
+    #gameover {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #highScore{
+        height: 1.5rem;
+        border: groove 2px;
+    }
+    
+    #high-scorePage{
+        display: none;
+        width: 50%;
+        border: solid;
+        border-color: silver;
+        border-bottom-style: groove;
+        padding-bottom: .3rem;
+        background: #080101;
+    }
+    
+    #highscore-header {
+        display:flex;
+        justify-content: space-around;
+        border-bottom-style: outset;
+        margin-bottom: .5rem;
+        background-color: rgb(255, 255, 255);
+        color: #080101;
+        font-family: sans-serif;
+    }
+
+    #highscoreContainer{
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #initials{
+        margin: .5rem;
+        height: 1.75rem;
+    }
+    
+    #highscore-initials{
+        display: inline-block;
+        padding-left: 9.5rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    
+    #highscore-score{
+        float: right;
+        padding-right: 8.75rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    
+    #finalScore{
+        padding-bottom: 0.5rem;
+        font-size: x-large;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    
+    #endGameBtns{
+        display: none;
+    }
+
